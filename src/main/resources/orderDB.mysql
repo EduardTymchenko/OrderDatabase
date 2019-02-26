@@ -1,0 +1,21 @@
+DROP TABLE  IF EXISTS products;
+CREATE TABLE products(
+   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+   name VARCHAR(30) NOT NULL,
+   price INT NOT NULL
+ )DEFAULT CHAR SET=utf8;
+
+DROP TABLE  IF EXISTS clients;
+ CREATE TABLE clients(
+   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+   first_name VARCHAR(40) NOT NULL,
+   last_name VARCHAR(40) NOT NULL
+ ) DEFAULT CHAR SET=utf8;
+
+DROP TABLE  IF EXISTS orders ;
+ CREATE TABLE orders(
+   number INT NOT NULL,
+   client_id INT NOT NULL ,
+   product_id INT NOT NULL ,
+   quantity INT NOT NULL
+ ) DEFAULT CHAR SET=utf8;

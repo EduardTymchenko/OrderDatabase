@@ -1,4 +1,4 @@
-# Questionnaire
+# Order Database
 JavaEE JDBC MySQL
 
 Создать проект «База данных заказов». Создать таблицы «Товары» , «Клиенты» и «Заказы».
